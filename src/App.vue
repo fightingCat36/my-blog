@@ -1,21 +1,28 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Common />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Common from './layout/Common.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Common
   }
 }
 </script>
 
 <style>
+@import './assets/css/admin.css';
+/* @import './assets/css/amazeui.css';
+@import './assets/css/amazeui.flat.css'; */
+@import './assets/css/amazeui.min.css';
+@import './assets/css/app.css';
+@import './assets/css/lw-admin.css';
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
