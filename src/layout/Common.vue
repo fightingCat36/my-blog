@@ -2,6 +2,11 @@
     <div>
         <Head />
         <NavBar />
+        <slot></slot>
+        <div class="am-g am-g-fixed blog-fixed">
+          <slot name="slotBody"></slot>
+          <slot name="slotSider"></slot>
+        </div>
         <Footer />
     </div>
 </template>
