@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <!-- <Common /> -->
-    <HomePage />
+    <Common />
+    <!-- <HomePage /> -->
+    <!-- <router-view /> -->
   </div>
 </template>
 
 <script>
-// import Common from './layout/Common.vue'
+import Common from './layout/Common.vue'
 import HomePage from './layout/HomePage.vue'
 
 export default {
   name: 'app',
   components: {
-    // Common,
+    Common,
     HomePage
   }
 }

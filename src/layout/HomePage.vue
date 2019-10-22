@@ -1,18 +1,19 @@
 <template>
-  <Common>
-      <Carousel />
-      <template v-slot:slotBody>
+  <!-- <Common> -->
+      <div>
           <article-list />
-      </template>
-      <template v-slot:slotSider>
           <sider />
-      </template>
-  </Common>
+      </div>
+      <!-- <template v-slot:slotBody> -->
+      <!-- </template> -->
+      <!-- <template v-slot:slotSider> -->
+      <!-- </template> -->
+  <!-- </Common> -->
 </template>
 
 <script>
 import Common from './Common.vue'
-import Carousel from '../components/homepage/Carousel.vue'
+// import Carousel from '../components/homepage/Carousel.vue'
 import ArticleList from '../components/homepage/ArticleList.vue'
 import Sider from '../components/common/Sider.vue'
 
@@ -20,7 +21,7 @@ export default {
   name: 'common',
   components: {
       Common,
-      Carousel,
+    //   Carousel,
       ArticleList,
       Sider
   }
