@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Common from './Common.vue'
+// import Common from './Common.vue'
 // import Carousel from '../components/homepage/Carousel.vue'
 import ArticleList from '../components/homepage/ArticleList.vue'
 import Sider from '../components/common/Sider.vue'
@@ -20,7 +20,7 @@ import Sider from '../components/common/Sider.vue'
 export default {
   name: 'common',
   components: {
-      Common,
+      // Common,
     //   Carousel,
       ArticleList,
       Sider

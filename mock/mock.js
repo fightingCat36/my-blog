@@ -1,7 +1,7 @@
 import Mock from 'mockjs'
 
-Mock.mock('/article', {
-    'data|3-7': [{
+Mock.mock(/\/article.*/, {
+    'articles|3-7': [{
         id: Mock.Random.natural(),
         time: Mock.Random.date('yyyy-MM-dd'),
         title: Mock.Random.csentence(5, 9),

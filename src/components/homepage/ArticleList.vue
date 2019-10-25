@@ -20,21 +20,26 @@
 
 <script>
 import axios from 'axios'
+import { mapActions, mapGetters } from 'vuex'
 import { ARTICLE_URL } from '../../util/const'
 import '../../../mock/mock.js'
 export default {
     name: 'articleList',
     data: () => {
         return {
-            articleList: []
+            // articleList: []
         }
     },
     created () {
         const url = ARTICLE_URL
-        axios.get(url).then((res) => {
-            this.articleList = res.data.data
-        }).catch((err) => {
-            console.log(err)
+        this.getArticleList(url)
+    },
+    methods: {
+        ...mapActions(['getArticleList'])
+    },
+    computed: {
+        ...mapGetters({
+            articleList: 'articleList'
         })
     },
     components: {
