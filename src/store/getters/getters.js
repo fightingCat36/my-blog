@@ -5,5 +5,13 @@ export default {
 
     page (state) {
         return state.page
+    },
+
+    count (state) {
+        return state.count
+    },
+
+    hasPagination (state) {
+        return state.hasPagination
     }
 }

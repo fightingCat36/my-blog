@@ -11,10 +11,7 @@
                 <p>{{item.description}}</p>
             </div>
         </article>      
-        <ul class="am-pagination">
-            <li class="am-pagination-prev"><a href="">« Prev</a></li>
-            <li class="am-pagination-next"><a href="">Next »</a></li>
-        </ul>
+        <pagination />
     </div>
 </template>
 
@@ -22,6 +19,7 @@
 import axios from 'axios'
 import { mapActions, mapGetters } from 'vuex'
 import { ARTICLE_URL } from '../../util/const'
+import Pagination from '../common/Pagination.vue'
 import '../../../mock/mock.js'
 export default {
     name: 'articleList',
@@ -43,7 +41,7 @@ export default {
         })
     },
     components: {
-
+        Pagination
     }
 }
 </script>
