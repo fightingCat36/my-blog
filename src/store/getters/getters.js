@@ -13,5 +13,13 @@ export default {
 
     hasPagination (state) {
         return state.hasPagination
+    },
+
+    imageList (state) {
+        return state.imageList
+    },
+
+    wisdomList (state) {
+        return state.wisdomList
     }
 }

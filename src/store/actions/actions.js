@@ -22,7 +22,17 @@ export default {
     async getImageList (store, url) {
         try {
             const res = await axios.get(url)
-            store.commit('getImageList', res.data)
+            store.commit('getImageList', res.data.data)
+        } catch (error) {
+            console.log(error)
+        }
+    },
+
+    // 获取感悟列表
+    async getWisdomList (store, url) {
+        try {
+            const res = await axios.get(url)
+            store.commit('getWisdomList', res.data.data)
         } catch (error) {
             console.log(error)
         }
